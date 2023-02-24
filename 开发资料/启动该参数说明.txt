@@ -1,0 +1,11 @@
+1、启动参数：
+--xformers                                 是否启用xformers(默认启用)
+--ngrok                                    是否启用反向代理
+--skip-install                             是否跳过依赖检查
+--skip-torch-cuda-test                     是否跳过torch-cuda测试
+--skip-python-version-check                是否跳过python版本检查
+
+2、webui/模型相关设置，直接跳转网页设置标签
+
+3、应用自身设置
+明暗色选择
