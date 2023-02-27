@@ -26,6 +26,10 @@ class ConfigManage extends BaseManage {
 
   // 获取配置
   ConfigModel? get config => _config;
+
+  // 写入配置
+  Future<bool> updateConfig(ConfigModel model) =>
+      cacheManage.setJsonMap(_configCacheKey, (_config = model).to());
 }
 
 // 单例调用
