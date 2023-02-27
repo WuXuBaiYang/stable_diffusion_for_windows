@@ -37,12 +37,10 @@ class ThemeManage extends BaseManage {
   }
 
   // 明暗样式开关
-  Future<void> toggleTheme() async {
-    final type = currentTheme.brightness == Brightness.light
-        ? Brightness.dark
-        : Brightness.light;
-    return switchTheme(type);
-  }
+  Future<void> toggleTheme() =>
+      switchTheme(currentTheme.brightness == Brightness.light
+          ? Brightness.dark
+          : Brightness.light);
 
   // 缓存当前样式
   FluentThemeData? _currentTheme;
